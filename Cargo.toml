@@ -1,0 +1,18 @@
+[package]
+name = "libsignal-protocol-sys"
+version = "0.1.0"
+authors = ["Maximilian Schoenenberg <max.schoenenberg@me.com>"]
+edition = "2018"
+build = "build.rs"
+links = "libsignal-protocol-c"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[build-dependencies]
+bindgen = "^0.53.2"
+cmake = "^0.1.42"
+
+[lib]
+doctest = false
